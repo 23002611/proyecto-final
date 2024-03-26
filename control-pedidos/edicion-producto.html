@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar Producto</title>
+</head>
+<body>
+    <h1>Editar Producto</h1>
+    <form id="editar-producto-form">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre"><br><br>
+
+        <label for="descripcion">Descripción:</label>
+        <textarea id="descripcion" name="descripcion"></textarea><br><br>
+
+        <label for="categoria">Categoría:</label>
+        <input type="text" id="categoria" name="categoria"><br><br>
+
+        <label for="existencia">Existencia:</label>
+        <input type="text" id="existencia" name="existencia"><br><br>
+
+        <button type="button" onclick="guardarCambios()">Guardar Cambios</button>
+        <button type="button" onclick="eliminarProducto()">Eliminar Producto</button>
+    </form>
+
+    <script src="renderer.js"></script>
+</body>
+</html>

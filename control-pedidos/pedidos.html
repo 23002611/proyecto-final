@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Realizar Pedido</title>
+</head>
+<body>
+    <h1>Realizar Pedido</h1>
+    <form id="pedido-form">
+        <label for="codigo">Código de Identificación:</label>
+        <input type="text" id="codigo" name="codigo" disabled><br><br>
+
+        <label for="nombre_producto">Nombre del Producto:</label>
+        <input type="text" id="nombre_producto" name="nombre_producto" disabled><br><br>
+
+        <label for="proveedor">Proveedor:</label>
+        <select id="proveedor" name="proveedor">
+            <option value="proveedor1">Proveedor 1</option>
+            <option value="proveedor2">Proveedor 2</option>
+            <!-- Agrega más opciones según tus proveedores -->
+        </select><br><br>
+
+        <label for="cantidad">Cantidad:</label>
+        <input type="number" id="cantidad" name="cantidad"><br><br>
+
+        <button type="button" onclick="confirmarPedido()">Confirmar Pedido</button>
+    </form>
+
+    <script src="renderer.js"></script>
+</body>
+</html>
